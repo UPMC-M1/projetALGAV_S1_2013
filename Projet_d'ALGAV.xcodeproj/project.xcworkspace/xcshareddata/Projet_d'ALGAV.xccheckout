@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>601ECDE1-7ED3-4469-A9D1-000F2D486CEA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Projet_d'ALGAV</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EAB45D73-DFF9-42B0-B4D6-BB5F90923B1A</key>
+		<string>https://github.com/UPMC-M1/projetALGAV_S1_2013.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Projet_d'ALGAV.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EAB45D73-DFF9-42B0-B4D6-BB5F90923B1A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/UPMC-M1/projetALGAV_S1_2013.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EAB45D73-DFF9-42B0-B4D6-BB5F90923B1A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EAB45D73-DFF9-42B0-B4D6-BB5F90923B1A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>projetALGAV_S1_2013</string>
+		</dict>
+	</array>
+</dict>
+</plist>
