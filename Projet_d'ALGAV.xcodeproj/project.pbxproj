@@ -224,6 +224,7 @@
 				564FE3CF184112EF007FCF19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
