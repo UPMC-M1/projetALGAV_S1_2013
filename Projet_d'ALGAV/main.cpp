@@ -51,6 +51,14 @@ void init() {
 }
 
 
+node_t * modify(node_t *, unsigned char) {
+    
+}
+
+
+
+
+
 void processText(string text) {
     void init();
     for (int i = 0; i < text.size(); i++) {
