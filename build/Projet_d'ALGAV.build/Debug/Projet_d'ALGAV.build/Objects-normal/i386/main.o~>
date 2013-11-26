@@ -1,0 +1,13 @@
+cc1plus: warning: -Wuninitialized is not supported without -O
+/Users/Souf/Documents/Mes_Cours/Projects/master/projetALGAV_S1_2013/Projet_d'ALGAV/main.cpp:54:14: error: empty character constant
+/Users/Souf/Documents/Mes_Cours/Projects/master/projetALGAV_S1_2013/Projet_d'ALGAV/main.cpp: In function 'void init()':
+/Users/Souf/Documents/Mes_Cours/Projects/master/projetALGAV_S1_2013/Projet_d'ALGAV/main.cpp:44: error: 'nullptr' was not declared in this scope
+/Users/Souf/Documents/Mes_Cours/Projects/master/projetALGAV_S1_2013/Projet_d'ALGAV/main.cpp: In function 'void initAsInterNode(node_t*, node_t*, node_t*, node_t*, int)':
+/Users/Souf/Documents/Mes_Cours/Projects/master/projetALGAV_S1_2013/Projet_d'ALGAV/main.cpp:60: error: 'the' was not declared in this scope
+/Users/Souf/Documents/Mes_Cours/Projects/master/projetALGAV_S1_2013/Projet_d'ALGAV/main.cpp: In function 'void initAsNewLeaf(node_t*, node_t*, unsigned char)':
+/Users/Souf/Documents/Mes_Cours/Projects/master/projetALGAV_S1_2013/Projet_d'ALGAV/main.cpp:67: error: 'nullptr' was not declared in this scope
+/Users/Souf/Documents/Mes_Cours/Projects/master/projetALGAV_S1_2013/Projet_d'ALGAV/main.cpp: In function 'void addingNewChar(unsigned char)':
+/Users/Souf/Documents/Mes_Cours/Projects/master/projetALGAV_S1_2013/Projet_d'ALGAV/main.cpp:110: error: base operand of '->' has non-pointer type 'node_t'
+/Users/Souf/Documents/Mes_Cours/Projects/master/projetALGAV_S1_2013/Projet_d'ALGAV/main.cpp:110: error: 'specialCode' was not declared in this scope
+/Users/Souf/Documents/Mes_Cours/Projects/master/projetALGAV_S1_2013/Projet_d'ALGAV/main.cpp:111: error: 'theWay' was not declared in this scope
+/Users/Souf/Documents/Mes_Cours/Projects/master/projetALGAV_S1_2013/Projet_d'ALGAV/main.cpp:117: error: no match for 'operator==' in 'specialsFather->node::left == root'
