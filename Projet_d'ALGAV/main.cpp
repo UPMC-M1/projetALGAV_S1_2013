@@ -39,7 +39,6 @@ void init();                                            // initialisation
 node_t * initAsSpecialNode(node_t *, int, int);              // inits special symbol and returns it
 node_t * modify(node_t *, unsigned char);               // modify function defined in the document
 node_t * treatment(node_t *, node_t *);                 // treatment function defined in the document
-node_t * searchForTheNodeWithCharacter(unsigned char);  // searches for character in the tree
 
 bool isInTheTree(node_t *, unsigned char);
 node_t * finBloc(node_t *);
@@ -219,7 +218,7 @@ pair<node_t *, int> extractFirstEqual(vector<node_t * > vec) {
 
 
 
-//
+//swap two nodes and change there codes
 
 void swapNodes(node_t * x, node_t * y) {
     gdbh.erase(make_pair(x->code, x));
