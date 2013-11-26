@@ -29,6 +29,7 @@ map <unsigned char, int> characterCode;
 string getText();
 void processText(string);
 void init();
+node_t * modify(node_t *, unsigned char);
 
 // function definitions
 
@@ -43,12 +44,10 @@ void init() {
     characterCode['#'] = 0;
 }
 
-//function initialize the node as a special node
 
-
-
-
-//this function initialize the node like a new Leaf with a key character
+node_t * modify(node_t *, unsigned char) {
+    
+}
 
 
 
