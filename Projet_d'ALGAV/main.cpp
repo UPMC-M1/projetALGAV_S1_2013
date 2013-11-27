@@ -24,10 +24,10 @@ struct node {
 // globals declarations
 
 node_t root;
-int code = 255;
-map<unsigned char, pair<int, int> > characterWay;
-set<pair<int, node_t *> > gdbh;                     //GaucheDroitBasHaut parcours
 node_t *theSpecialSymbol;
+int code = 255;
+map<unsigned char, int > characterWay;    //contains the character and the int representing his way
+set<pair<int, node_t *> > gdbh;                     //GaucheDroitBasHaut parcours by there codes
 
 // function declarations
 
@@ -39,6 +39,7 @@ void init();                                            // initialisation
 node_t * initAsSpecialNode(node_t *, int, int);              // inits special symbol and returns it
 node_t * modify(node_t *, unsigned char);               // modify function defined in the document
 node_t * treatment(node_t *, node_t *);                 // treatment function defined in the document
+node_t * searchForTheNodeWithCharacter(unsigned char);  // searches for character in the tree
 
 bool isInTheTree(node_t *, unsigned char);
 node_t * finBloc(node_t *);
@@ -69,7 +70,7 @@ void init() {
     root = *initAsSpecialNode(&root, code--, 0);
     gdbh.insert(make_pair(255, &root));
     theSpecialSymbol = &root;
-    characterWay['#'] = make_pair(0, 0);
+    characterWay['#'] = 0;
 }
 
 
@@ -78,6 +79,7 @@ node_t * modify(node_t * H, unsigned char c) {
     if (!isInTheTree(H, c)) {
         Q = theSpecialSymbol->father;
         
+        //creating the node who's going to be on the right side of his father (the old specialSymbol)
         node_t * right = new node_t;
         right->key = c;
         right->weight = 1;
@@ -86,20 +88,38 @@ node_t * modify(node_t * H, unsigned char c) {
         right->right = nullptr;
         right->floor = theSpecialSymbol->floor + 1;
         
+        //insert this right node in the set representing the run
         gdbh.insert(make_pair(right->code, right));
         
+        //creating node who's going to be on the left side of his father (the new specialSymbol)
         node_t *left = new node_t;
         left = initAsSpecialNode(left, code--, theSpecialSymbol->floor + 1);
         
+        //insert the left in the set
         gdbh.insert(make_pair(left->code, left));
         
+        //lenking the node that we created
         right->father = left->father = theSpecialSymbol;
         
         node_t * f = theSpecialSymbol;
         f->left = left;
         f->right = right;
         
+        //making the left node the new specialSymbol
         theSpecialSymbol = left;
+        
+        /*after creating the new nodes, we have to add the new character in the map with his way
+        and also update the way of the special symbol.
+         
+         we can say that the way of the new symbol is the old way of the special symbol + 1 cause we go right
+         and the way of the new special symbol is the way of the old one + 0 cause we go left
+         
+         */
+        
+        
+        
+        
+        
     } else {
         Q = searchForTheNodeWithCharacter(c);
         if (Q->father->left == theSpecialSymbol && Q->father == finBloc(Q))
@@ -259,6 +279,31 @@ bool isLeft(node_t * Q) {
     return false;
 }
 
+//search for a node which allready exists in the tree
+
+node_t * searchForTheNodeWithCharacter(unsigned char k){
+	int way = characterWay[k];
+	node_t * tmp = &root;
+	while (1) {
+        //first 0 so we go left
+		if( (way & 1) == 0){
+            //if we can continue we just go down
+            if(tmp->left != nullptr){
+                tmp = tmp->left;
+                way = way >> 1;
+            }
+            //otherwise we arrived
+            else
+                return tmp;
+		}
+        //otherwise we go right
+        else if ((way & 1) == 1){
+            tmp = tmp->right;
+            way = way >> 1;
+        }
+	}
+	
+}
 
 
 void processText(string text) {
@@ -279,15 +324,14 @@ bool isSpecialSymbol(node_t *node) {
 
 
 
-
-
-
 int main(int argc, const char * argv[])
 {
     string text;
-    
+    /*
     text = getText();
     processText(text);
+     */
+    
     
     return 0;
 }

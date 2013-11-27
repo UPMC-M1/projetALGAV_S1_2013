@@ -341,10 +341,10 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>019502A31844AAB50054CECC</string>
+										<string>019502B7184524960054CECC</string>
 										<key>history</key>
 										<array>
-											<string>019502941844AA670054CECC</string>
+											<string>019502A31844AAB50054CECC</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -356,14 +356,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1068, 638}}</string>
+								<string>{{0, 0}, {1068, 637}}</string>
 								<key>RubberWindowFrame</key>
 								<string>4 56 1276 722 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>638pt</string>
+							<string>637pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -376,14 +376,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 643}, {1068, 38}}</string>
+								<string>{{0, 642}, {1068, 39}}</string>
 								<key>RubberWindowFrame</key>
 								<string>4 56 1276 722 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>38pt</string>
+							<string>39pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -402,9 +402,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>019502A01844AA9D0054CECC</string>
+				<string>019502B8184524960054CECC</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>019502A11844AA9D0054CECC</string>
+				<string>019502B9184524960054CECC</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -525,7 +525,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>407153333.32185102</real>
+	<real>407184534.67974502</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
@@ -543,7 +543,7 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>01B4AC4318411BB70040EED4</string>
-		<string>/Users/Souf/Documents/Mes_Cours/Projects/master/projetALGAV_S1_2013/Projet_d'ALGAV.xcodeproj</string>
+		<string>/Users/Souf/Documents/Mes_Cours/Projects/master/Algav/projetALGAV_S1_2013/Projet_d'ALGAV.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>4 56 1276 722 0 0 1280 778 </string>
@@ -623,7 +623,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>01B4AC4318411BB70040EED4</string>
-				<string>019502A21844AA9D0054CECC</string>
+				<string>019502BA184524960054CECC</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
