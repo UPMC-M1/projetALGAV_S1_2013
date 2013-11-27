@@ -285,16 +285,14 @@ node_t * searchForTheNodeWithCharacter(unsigned char k){
 	int way = characterWay[k];
 	node_t * tmp = &root;
 	while (1) {
+        //if there is no left children then we arrived
+        if(tmp->left ==nullptr)
+            return tmp;
+        
         //first 0 so we go left
 		if( (way & 1) == 0){
-            //if we can continue we just go down
-            if(tmp->left != nullptr){
-                tmp = tmp->left;
-                way = way >> 1;
-            }
-            //otherwise we arrived
-            else
-                return tmp;
+            tmp = tmp->left;
+            way = way >> 1;
 		}
         //otherwise we go right
         else if ((way & 1) == 1){
@@ -302,6 +300,8 @@ node_t * searchForTheNodeWithCharacter(unsigned char k){
             way = way >> 1;
         }
 	}
+    
+    return nullptr;
 	
 }
 
@@ -331,6 +331,8 @@ int main(int argc, const char * argv[])
     text = getText();
     processText(text);
      */
+    
+    
     
     
     return 0;
