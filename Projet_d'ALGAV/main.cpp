@@ -104,7 +104,7 @@ node_t * modify(node_t * H, unsigned char c) {
         node_t * f = theSpecialSymbol;
         f->left = left;
         f->right = right;
-        
+        f->key = '\0';
         //making the left node the new specialSymbol
         theSpecialSymbol = left;
         
@@ -319,11 +319,13 @@ bool isSpecialSymbol(node_t *node) {
     return false;
 }
 
-
+//prints node
 void printNode (node_t * node){
-    
+    if(node->key != '\0'){
+        cout << "LEAF => " << node->key << " " << node->weight << endl;
+    }else
+        cout << "NODE => " << node->weight << endl;
 }
-
 
 
 int main(int argc, const char * argv[])
