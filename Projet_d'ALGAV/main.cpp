@@ -119,7 +119,6 @@ node_t * modify(node_t * H, unsigned char c) {
         
         
         
-        
     } else {
         Q = searchForTheNodeWithCharacter(c);
         if (Q->father->left == theSpecialSymbol && Q->father == finBloc(Q))
@@ -292,17 +291,16 @@ node_t * searchForTheNodeWithCharacter(unsigned char k){
         //first 0 so we go left
 		if( (way & 1) == 0){
             tmp = tmp->left;
-            way = way >> 1;
 		}
         //otherwise we go right
         else if ((way & 1) == 1){
             tmp = tmp->right;
-            way = way >> 1;
         }
+        
+        //continue to the next step
+        way = way >> 1;
 	}
-    
     return nullptr;
-	
 }
 
 
@@ -321,6 +319,10 @@ bool isSpecialSymbol(node_t *node) {
     return false;
 }
 
+
+void printNode (node_t * node){
+    
+}
 
 
 
