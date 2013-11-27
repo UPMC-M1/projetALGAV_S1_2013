@@ -4,6 +4,9 @@
 #include <vector>
 #include <set>
 
+
+#include <queue>
+
 using namespace std;
 
 // struct definitions
@@ -318,6 +321,47 @@ bool isSpecialSymbol(node_t *node) {
         return true;
     return false;
 }
+
+
+
+
+
+////////////////////////            testing
+
+queue<node_t *> q;
+
+
+void printTree() {
+    node_t *tmp;
+    
+    q.push(&root);
+    
+    while (!q.empty()) {
+        tmp = q.front();
+        q.pop();
+        cout<<tmp->weight<<"   ";
+        
+        q.push(tmp->left);
+        q.push(tmp->right);
+    }
+}
+
+
+void initTestTree() {
+    root.weight = 10;
+    node_t * l1 = 
+    , r1, l2, r2, l3,r3;
+    
+    l1 = new node_t;
+    r1 = new node_t;
+    l2 = new node_t;
+    l1 = new node_t;
+    l1 = new node_t;
+    l1 = new node_t;
+}
+
+
+
 
 
 void printNode (node_t * node){
